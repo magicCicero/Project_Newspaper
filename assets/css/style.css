@@ -6,7 +6,7 @@
     font-family: cormorantb;
     src: url(../fonts/CormorantGaramond-Bold.ttf);
 }
-/* didnt use the font.  */
+/* didnt use the font. used times new roman*/
 :root{
     --bg: #E9E9E0;
     --textcolor: #333;
