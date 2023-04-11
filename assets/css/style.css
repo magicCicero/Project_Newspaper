@@ -1,0 +1,126 @@
+@font-face {
+    font-family: cormorantr;
+    src: url(../fonts/CormorantGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: cormorantb;
+    src: url(../fonts/CormorantGaramond-Bold.ttf);
+}
+/* didnt use the font.  */
+:root{
+    --bg: #E9E9E0;
+    --textcolor: #333;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color:var(--textcolor);
+    background-color: var(--bg);
+   
+}
+html{
+    font-size: 62.5%;
+    padding:2rem 5rem;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+header{
+    text-align: center;
+}
+h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+h1::first-letter, h1 span{
+    font-size: 6rem;
+}
+h3{
+    font-size: 3rem;
+}
+main{
+    display:flex;
+    flex-direction: row;
+    gap:4rem;
+}
+p{
+    font-size: 1.8rem;
+}
+nav{
+    border-top: 5px double var(--textcolor);
+    border-bottom: 5px double var(--textcolor);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.7rem;
+}
+/* .articles{
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows:auto;
+    grid-column-gap:10px;
+    grid-row-gap:10px;
+    max-width: 80vw;
+} */
+.articles{
+    display:grid;
+    grid-template-columns:20vw 4fr;
+    grid-template-rows:auto;
+    grid-column-gap:10px;
+    grid-row-gap:10px;
+    max-width: 80vw;
+}
+.kitchenimg{
+    grid-area:2 / 3 / 6 / 5;
+    place-self: center center;
+}
+h2{
+    font-size: 4rem;
+    grid-area:1 / 1 / 2 / 5;
+    text-align: center;
+    padding:2rem;
+}
+.kitchenimg img {
+    max-width:100%;
+    height:60vh;
+}
+.kitchenimg p {
+    font-family: cormoranti;
+    font-style: italic;
+}
+.sidebar{
+    text-align: center;
+    max-width: 15vw;
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows:auto;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+}
+h4{
+    font-size: 2.2rem;
+    padding:1rem 0;
+    font-family: cormorantb;
+}
+.sidebar div:first-of-type, .sidebar div:nth-last-of-type(2){
+    padding:2rem;
+    border: 5px double var(--textcolor);    
+}
+.sidebar div:last-of-type img{
+    max-width:100%;
+    padding:1rem;
+    border: 5px double var(--textcolor);
+    filter:grayscale(1);
+}
+.sidebar div:first-of-type h4{
+    font-size: 5rem;
+    font-family: cormorantb;
+    font-weight: 900;
+}
+h5{
+    font-size: 2.4rem;
+}
